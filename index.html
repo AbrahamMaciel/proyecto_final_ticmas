@@ -13,22 +13,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <aside class="flex items-center justify-center mt-5">
+<body class="flex">
+    <aside class="flex items-center justify-center w-auto mt-0 z-0">
 
-        <div class="bg-green-400 shadow-lg text-gray-800 shadow-emerald-500/70 w-64 h-auto p-10">
+        <div class="bg-green-400/80 shadow-lg text-gray-800 shadow-emerald-500/70 h-screen px-20 py-12">
             <div class="flex items-center justify-center mb-10">
-                <img class="rounded-full w-32 border-2 border-gray-300"
+                <img class="rounded-full w-40 border-2 border-gray-300"
                     src="https://randomuser.me/api/portraits/women/71.jpg" alt="profile_picture">
             </div>
             <h1 class="uppercase font-bold">Datos Personales</h1>
             <!-- Nota: el <hr> se colorea con la propiedad de borde -->
             <hr class="w-2/6 mb-5 border-gray-600">
-            <h1>Email: joe.baker@example.com</h1>
-            <h1>Fecha de Nacimiento: 6/6/1973</h1>
-            <h1>Direccion: 139 First Street</h1>
-            <h1>Telefono: (529) 531-0147</h1>
-            <h1>Celular: (380) 4315423</h1>
+            <h1><span class="font-semibold">Email:</span> joe.baker@example.com</h1>
+            <h1><span class="font-semibold">Fecha de Nacimiento:</span> 6/6/1973</h1>
+            <h1><span class="font-semibold">Direccion:</span> 139 First Street</h1>
+            <h1><span class="font-semibold">Telefono:</span> (529) 531-0147</h1>
+            <h1><span class="font-semibold">Celular:</span> (380) 4315423</h1>
             <h1 class="uppercase mt-5 font-bold">Educacion</h1>
             <hr class="w-5/6 mb-5 border-gray-600">
             <h1 class="font-semibold">Superiores</h1>
@@ -37,10 +37,35 @@
             <span class="italic">Intituto cekundario de la k-ye</span>
         </div>
     </aside>
-    <section class="flex items-center justify-center mt-5">
-        <h1>HELOOOOOOOO</h1>
-        <div>
-            <h1>esperiensia</h1>
+
+    <section class="flex w-full flex-col text-gray-900 z-10">
+
+        <div class="text-center">
+            <h1 class="font-bold p-4 bg-green-400/90 text-2xl">Pepe Picapiedra</h1>
+        </div>
+        <div class="pl-16 pt-5   text-xl">
+            <h1 class="font-semibold mt-5">Experiencia</h1>
+            <hr class="mb-5 w-11/12 mb-5 border-gray-600">
+            <h2 class="font-semibold italic mt-5">Trabajo 1 (2016-...)</h2>
+            <ul class="ml-5 list-disc text-lg w-11/12">
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure delectus aliquam excepturi.</li>
+                <li>Explicabo repellat unde blanditiis sed, quia, atque ad vel harum nostrum ratione .</li>
+                <li>Ullam voluptate consequuntur corrupti laudantium sunt doloribus eveniet dolore.</li>
+            </ul>
+            <h1 class="font-semibold mt-5">Habilidades</h1>
+            <hr class="mb-5 w-11/12 mb-5 border-gray-600">
+            <h2 class="font-semibold italic mt-5">Software</h2>
+            <ul class="ml-5 list-disc text-lg w-11/12">
+                <li>Officia aut assumenda nulla quas consequatur nisi dolorum saepe, qui quia incidunt quibusdam facilis molestiae. Aliquam cum nam labore ea..</li>
+                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, commodi eos?</li>
+                <li>Amet consectetur adipisicing elit. Reiciendis voluptatum nesciunt tenetur aspernatur.</li>
+            </ul>
+            <h2 class="font-semibold italic mt-5">Metodologias</h2>
+            <ul class="ml-5 list-disc text-lg w-11/12">
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure delectus aliquam excepturi.</li>
+                <li>Earum aliquid dignissimos ratione quae alias voluptatem deserunt sequi!</li>
+                <li>Eius sapiente explicabo veniam nostrum ipsam error magni consequatur doloremque odio.</li>
+            </ul>
         </div>
     </section>
 </body>
