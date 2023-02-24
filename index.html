@@ -14,107 +14,134 @@
     <script src="https://kit.fontawesome.com/53d44d881b.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="flex flex-col md:flex-row">
-    <aside
-        class="flex items-start justify-center w-auto mt-0 z-0 bg-gradient-to-b from-green-400  to-green-300 shadow-md shadow-emerald-500/70">
+<body class="">
 
-        <div class="text-center md:text-left text-gray-800 grow px-16 w-96 pb-12 pt-0 ">
-            <div class="flex items-center justify-center mb-10">
-                <img class="rounded-full w-40 border-2 border-gray-300 mt-6"
-                    src="https://randomuser.me/api/portraits/men/7.jpg" alt="profile_picture">
-                <h1 class="md:hidden font-bold p-4 text-2xl">Pepe
-                    Picapiedra</h1>
+    <div class="flex flex-col md:flex-row ">
+        <aside
+            class="flex items-start justify-center w-auto mt-0 z-0 bg-gradient-to-b from-green-400  to-green-300 shadow-md shadow-emerald-500/70">
+
+            <div class="text-center md:text-left text-gray-800 grow px-16 w-96 pb-12 pt-0 ">
+                <div class="flex items-center justify-center mb-10 mt-6">
+                    <img class="rounded-full w-40 border-2 border-gray-300"
+                        src="https://randomuser.me/api/portraits/men/7.jpg" alt="profile_picture">
+                    <h1 class="md:hidden font-bold p-4 text-2xl">Pepe
+                        Picapiedra</h1>
+                </div>
+
+                <h1 class="uppercase font-bold"><i class="fa-solid fa-user"></i>Datos Personales</h1>
+                <!-- Nota: el <hr> se colorea con la propiedad de borde -->
+                <hr class="m-auto w-4/6 md:w-5/6 md:ml-0 mb-5 border-gray-800">
+                <!-- Nota 2: como costo alinear ese <hr> por suerte el margin-auto lo arreglo -->
+                <h1><span class="font-semibold"><i class="fa-solid fa-envelope"></i>Email:</span> joe.baker@example.com
+                </h1>
+                <h1><span class="font-semibold"><i class="fa-solid fa-cake-candles"></i>Fecha de Nacimiento:</span>
+                    6/6/1973
+                </h1>
+                <h1><span class="font-semibold"><i class="fa-solid fa-location-dot"></i>Direccion:</span> 139 First
+                    Street
+                </h1>
+                <h1><span class="font-semibold"><i class="fa-solid fa-phone"></i>Telefono:</span> (529) 531-0147</h1>
+                <h1><span class="font-semibold"><i class="fa-solid fa-mobile"></i>Celular:</span> (380) 4315423</h1>
+                <h1 class="uppercase mt-5 font-bold"><i class="fa-solid fa-book"></i>Educacion</h1>
+                <hr class="m-auto w-4/6 md:w-5/6 md:ml-0 mb-5 border-gray-800">
+                <h1 class="font-semibold"><i class="fa-solid fa-graduation-cap"></i>Superior</h1>
+                <span class="italic">Universida de la k-ye</span>
+                <span class="italic">Argentina 2012</span></Span>
+                <h1 class="font-semibold"><i class="fa-solid fa-school"></i>Basica</h1>
+                <span class="italic">Intituto cekundario de la k-ye</span>
+                <span class="italic">Argentina 2001</span>
+
+                <div class="flex">
+                    <button type="button" id="btn_mas_info"
+                        class="bg-green-500 text-gray-800 hover:text-gray-100 font-bold py-3 px-6 mt-6 mb-0 rounded hover:border-green-100 mx-auto">
+                        Mas info sobre mi
+                    </button>
+                </div>
             </div>
+        </aside>
 
-            <h1 class="uppercase font-bold"><i class="fa-solid fa-user"></i>Datos Personales</h1>
-            <!-- Nota: el <hr> se colorea con la propiedad de borde -->
-            <hr class="m-auto w-4/6 md:w-5/6 md:ml-0 mb-5 border-gray-800">
-            <!-- Nota 2: como costo alinear ese <hr> por suerte el margin-auto lo arreglo -->
-            <h1><span class="font-semibold"><i class="fa-solid fa-envelope"></i>Email:</span> joe.baker@example.com</h1>
-            <h1><span class="font-semibold"><i class="fa-solid fa-cake-candles"></i>Fecha de Nacimiento:</span> 6/6/1973
-            </h1>
-            <h1><span class="font-semibold"><i class="fa-solid fa-location-dot"></i>Direccion:</span> 139 First Street
-            </h1>
-            <h1><span class="font-semibold"><i class="fa-solid fa-phone"></i>Telefono:</span> (529) 531-0147</h1>
-            <h1><span class="font-semibold"><i class="fa-solid fa-mobile"></i>Celular:</span> (380) 4315423</h1>
-            <h1 class="uppercase mt-5 font-bold"><i class="fa-solid fa-book"></i>Educacion</h1>
-            <hr class="m-auto w-4/6 md:w-5/6 md:ml-0 mb-5 border-gray-800">
-            <h1 class="font-semibold"><i class="fa-solid fa-graduation-cap"></i>Superior</h1>
-            <span class="italic">Universida de la k-ye</span>
-            <span class="italic">Argentina 2012</span></Span>
-            <h1 class="font-semibold"><i class="fa-solid fa-school"></i>Basica</h1>
-            <span class="italic">Intituto cekundario de la k-ye</span>
-            <span class="italic">Argentina 2001</span>
+        <section class="flex w-full flex-col text-gray-900 z-10 shadow-md shadow-emerald-500/70">
 
-            <div class="flex">
-                <button type="button" id="btn_mas_info"
-                    class="bg-green-500 text-gray-800 hover:text-gray-100 font-bold py-3 px-6 mt-6 mb-0 rounded hover:border-green-100 mx-auto">
-                    Mas info sobre mi
-                </button>
+            <div class="text-center hidden md:block">
+                <h1 class="font-bold p-2 bg-green-400/90 text-2xl rounded-b shadow-md shadow-emerald-500/20">Pepe
+                    Picapiedra
+                </h1>
             </div>
-        </div>
-    </aside>
+            <div class="pl-16 pt-5 text-xl">
 
-    <section class="flex w-full flex-col text-gray-900 z-10">
-
-        <div class="text-center hidden md:block">
-            <h1 class="font-bold p-2 bg-green-400/90 text-2xl rounded-b shadow-md shadow-emerald-500/20">Pepe Picapiedra
-            </h1>
-        </div>
-        <div class="pl-16 pt-5 text-xl">
-
-            <h1 class="font-semibold mt-5 mb-1"><i class="fa-solid fa-star fa-lg" style="color: gold;"></i>Experiencia
-            </h1>
-            <hr class="mb-5 w-11/12 border-gray-600">
-
-            <h2 class="font-semibold italic my-4 text-slate-700">Trabajo 1 (2016-...)</h2>
-            <ul class="ml-5 list-disc text-base w-11/12">
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure delectus aliquam excepturi.</li>
-                <li>Explicabo repellat unde blanditiis sed, quia, atque ad vel harum nostrum ratione .</li>
-                <li>Ullam voluptate consequuntur corrupti laudantium sunt doloribus eveniet dolore.</li>
-            </ul>
-            <h2 class="font-semibold italic my-4 text-slate-700">Trabajo 2 (2018-...)</h2>
-            <ul class="ml-5 list-disc text-base w-11/12">
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure delectus aliquam excepturi.</li>
-                <li>Ullam voluptate consequuntur corrupti laudantium sunt doloribus eveniet dolore.</li>
-            </ul>
-
-
-            <h1 class="font-semibold mt-5 mb-1"><i class="fa-solid fa-check fa-lg"
-                    style="color: limegreen;"></i>Habilidades</h1>
-            <hr class="mb-5 w-11/12 mb-5 border-gray-600">
-
-            <h2 class="font-semibold italic my-4 text-slate-700">Software</h2>
-            <ul class="ml-5 list-disc text-base w-11/12">
-                <li>Officia aut assumenda nulla quas consequatur nisi dolorum saepe, qui quia incidunt quibusdam facilis
-                    molestiae. Aliquam cum nam labore ea..</li>
-                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, commodi eos?</li>
-                <li>Amet consectetur adipisicing elit. Reiciendis voluptatum nesciunt tenetur aspernatur.</li>
-            </ul>
-            <h2 class="font-semibold italic my-4 text-slate-700">Metodologias</h2>
-            <ul class="ml-5 mb-10 list-disc text-base w-11/12">
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure delectus aliquam excepturi.</li>
-                <li>Earum aliquid dignissimos ratione quae alias voluptatem deserunt sequi!</li>
-                <li>Eius sapiente explicabo veniam nostrum ipsam error magni consequatur doloremque odio.</li>
-            </ul>
-
-            <ins id="mas_info" class="hidden">
-                <h1 class="font-semibold mt-5 mb-1"><i class="fa-solid fa-hourglass-start fa-lg"
-                        style="color: royalblue;"></i>Mas info inútil</h1>
+                <h1 class="font-semibold mt-5 mb-1"><i class="fa-solid fa-star fa-lg"
+                        style="color: gold;"></i>Experiencia
+                </h1>
                 <hr class="mb-5 w-11/12 border-gray-600">
 
-                <h2 class="font-semibold italic my-4 text-slate-700">Hobbies</h2>
-                <ul class="ml-5 mb-10 list-disc text-base w-11/12">
-                    <li>Leer criticas viejas de shows que recien me entero que existen</li>
-                    <li>Dar vueltas en circulos</li>
-                    <li>Deslizarme lentamente en bicicleta con el menor esfuerzo posible</li>
-                    <li>Intentar dislexia pelearle a la</li>
-                    <li>Buscar en google donde llevan acento las palabras</li>
+                <h2 class="font-semibold italic my-4 text-slate-700">Trabajo 1 (2016-...)</h2>
+                <ul class="ml-5 list-disc text-base w-11/12">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure delectus aliquam excepturi.</li>
+                    <li>Explicabo repellat unde blanditiis sed, quia, atque ad vel harum nostrum ratione .</li>
+                    <li>Ullam voluptate consequuntur corrupti laudantium sunt doloribus eveniet dolore.</li>
                 </ul>
-            </ins>
+                <h2 class="font-semibold italic my-4 text-slate-700">Trabajo 2 (2018-...)</h2>
+                <ul class="ml-5 list-disc text-base w-11/12">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure delectus aliquam excepturi.</li>
+                    <li>Ullam voluptate consequuntur corrupti laudantium sunt doloribus eveniet dolore.</li>
+                </ul>
 
+
+                <h1 class="font-semibold mt-5 mb-1"><i class="fa-solid fa-check fa-lg"
+                        style="color: limegreen;"></i>Habilidades</h1>
+                <hr class="mb-5 w-11/12 mb-5 border-gray-600">
+
+                <h2 class="font-semibold italic my-4 text-slate-700">Software</h2>
+                <ul class="ml-5 list-disc text-base w-11/12">
+                    <li>Officia aut assumenda nulla quas consequatur nisi dolorum saepe, qui quia incidunt quibusdam
+                        facilis
+                        molestiae. Aliquam cum nam labore ea..</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, commodi eos?</li>
+                    <li>Amet consectetur adipisicing elit. Reiciendis voluptatum nesciunt tenetur aspernatur.</li>
+                </ul>
+                <h2 class="font-semibold italic my-4 text-slate-700">Metodologias</h2>
+                <ul class="ml-5 mb-10 list-disc text-base w-11/12">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure delectus aliquam excepturi.</li>
+                    <li>Earum aliquid dignissimos ratione quae alias voluptatem deserunt sequi!</li>
+                    <li>Eius sapiente explicabo veniam nostrum ipsam error magni consequatur doloremque odio.</li>
+                </ul>
+
+                <ins id="mas_info" class="hidden">
+                    <h1 class="font-semibold mt-5 mb-1"><i class="fa-solid fa-heart fa-lg"
+                            style="color: crimson;"></i>Mas
+                        info inútil</h1>
+                    <hr class="mb-5 w-11/12 border-gray-600">
+
+                    <h2 class="font-semibold italic my-4 text-slate-700">Hobbies</h2>
+                    <ul class="ml-5 mb-10 list-disc text-base w-11/12">
+                        <li>Leer criticas viejas de shows que recien me entero que existen</li>
+                        <li>Dar vueltas en circulos</li>
+                        <li>Deslizarme lentamente en bicicleta con el menor esfuerzo posible</li>
+                        <li>Intentar dislexia pelearle a la</li>
+                        <li>Buscar en google donde llevan acento las palabras</li>
+                        <li>Aprender idiomas que no usen acentos</li>
+                    </ul>
+                </ins>
+
+            </div>
+        </section>
+    </div>
+
+    <footer class="flex flex-col md:flex-row bg-green-400 p-4">
+        <div class="flex flex-row justify-center md:justify-start">
+            <i class="fa-brands fa-github fa-4x"></i>
+            <div class="flex flex-col items-center justify-center">
+                <p class="flex font-semibold text-slate-800 ml-1">Sitio posible gracias a GitHub Pages</p>
+                <p class="flex text-slate-700 text-sm">Hecho por Fernandez Abraham</p>
+            </div>
         </div>
-    </section>
+        <div class="flex flex-row items-center justify-center gap-16 md:gap-2 md:ml-auto">
+            <a href="https://github.com/AbrahamMaciel?tab=repositories"
+                class="flex items-center justify-center md:ml-auto md:mr-4 md:mt-0 mt-4 md:mb-0">Mis Repositorios</a>
+            <a href="#" class="flex items-center justify-center md:mr-4 md:mt-0 mt-4 md:mb-0">Contacto</a>
+        </div>
+
+    </footer>
 
     <script src="js/index.js"></script>
 </body>
