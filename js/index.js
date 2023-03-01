@@ -1,6 +1,44 @@
-document.getElementById('btn_mas_info').onclick = function () {
-    let e = document.getElementById('mas_info');
+const api_url = 'https://randomuser.me/api/?gender=male';
 
-    e.classList.remove('hidden');
-    e.scrollIntoView();
+function inicializarBoton() {
+    document.getElementById('btn_mas_info').onclick = function () {
+        let e = document.getElementById('mas_info');
+
+        e.classList.remove('hidden');
+        e.scrollIntoView();
+    }
 }
+
+function escribirDatosPersona(persona) {
+    const $nombre_apellido = Array.from(document.getElementsByClassName('nombre-apellido'));
+    const $foto_perfil = document.getElementById('foto-perfil');
+    const $email = document.getElementById('email');
+    const $fecha_nacimiento = document.getElementById('fecha-nacimiento');
+    const $direccion = document.getElementById('direccion');
+    const $num_telefono = document.getElementById('num-telefono');
+    const $num_celular = document.getElementById('num-celular');
+
+    $nombre_apellido.forEach((e) => {
+        e.textContent = persona.name.first + ' ' + persona.name.last;
+    });
+    $foto_perfil.src = persona.picture.large;
+    $email.textContent = persona.email;
+    $fecha_nacimiento.textContent = (persona.dob.date).substring(0, 10);
+    // Medio quilombo el formato de las fechas lo dejo para otro dia
+    $direccion.textContent = persona.location.street.name + ', ' + persona.location.street.number;
+    $num_telefono.textContent = persona.phone;
+    $num_celular.textContent = persona.cell;
+    // Lo mismo del formato de numeros de telefono queda para el yo del maniana
+
+}
+
+async function initialize() {
+    const respuesta = await fetch(api_url);
+    const datos = await respuesta.json();
+    const { results: { 0: persona } } = datos;
+
+    inicializarBoton();
+    escribirDatosPersona(persona);
+}
+
+initialize()

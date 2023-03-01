@@ -20,36 +20,42 @@
         <aside
             class="flex items-start justify-center w-auto mt-0 z-0 bg-gradient-to-b from-green-400  to-green-300 shadow-sm shadow-emerald-500/70">
 
-            <div class="text-center md:text-left text-gray-800 grow px-16 w-96 pb-12 pt-0 ">
+            <div class="text-center md:text-left text-gray-800 grow px-14 w-max pb-12 pt-0 ">
                 <div class="flex items-center justify-center mb-10 mt-6">
-                    <img class="rounded-full w-40 border-2 border-gray-300"
-                        src="https://randomuser.me/api/portraits/men/7.jpg" alt="profile_picture">
-                    <h1 class="md:hidden font-bold p-4 text-2xl">Pepe
-                        Picapiedra</h1>
+                    <img id="foto-perfil" class="rounded-full w-40 border-2 border-gray-300"
+                        src="" alt="profile_picture">
+                    <h1 class="md:hidden font-bold p-4 text-2xl nombre-apellido">Pepe
+                        Placeholder</h1>
                 </div>
 
                 <h1 class="uppercase font-bold"><i class="fa-solid fa-user"></i>Datos Personales</h1>
                 <!-- Nota: el <hr> se colorea con la propiedad de borde -->
                 <hr class="m-auto w-4/6 md:w-5/6 md:ml-0 mb-5 border-gray-800">
                 <!-- Nota 2: como costo alinear ese <hr> por suerte el margin-auto lo arreglo -->
-                <h1><span class="font-semibold"><i class="fa-solid fa-envelope"></i>Email:</span> joe.baker@example.com
+                <h1><span class="font-semibold"><i class="fa-solid fa-envelope"></i>Email:</span> <span
+                        id="email">joe.baker@example.com</span>
                 </h1>
                 <h1><span class="font-semibold"><i class="fa-solid fa-cake-candles"></i>Fecha de Nacimiento:</span>
-                    6/6/1973
+                    <span id="fecha-nacimiento">6/6/1973</span>
                 </h1>
-                <h1><span class="font-semibold"><i class="fa-solid fa-location-dot"></i>Direccion:</span> 139 First
-                    Street
+                <h1><span class="font-semibold"><i class="fa-solid fa-location-dot"></i>Direccion:</span> <span
+                        id="direccion">
+                        139 First
+                        Street
+                    </span>
                 </h1>
-                <h1><span class="font-semibold"><i class="fa-solid fa-phone"></i>Telefono:</span> (529) 531-0147</h1>
-                <h1><span class="font-semibold"><i class="fa-solid fa-mobile"></i>Celular:</span> (380) 4315423</h1>
+                <h1><span class="font-semibold"><i class="fa-solid fa-phone"></i>Telefono:</span> <span
+                        id="num-telefono">(529) 531-0147</span></h1>
+                <h1><span class="font-semibold"><i class="fa-solid fa-mobile"></i>Celular:</span> <span
+                        id="num-celular">(380) 4315423</span></h1>
                 <h1 class="uppercase mt-5 font-bold"><i class="fa-solid fa-book"></i>Educacion</h1>
                 <hr class="m-auto w-4/6 md:w-5/6 md:ml-0 mb-5 border-gray-800">
                 <h1 class="font-semibold"><i class="fa-solid fa-graduation-cap"></i>Superior</h1>
                 <p class="italic">Universida de la k-ye</p>
                 <p class="italic">Argentina 2012</p>
                 <h1 class="font-semibold"><i class="fa-solid fa-school"></i>Basica</h1>
-                <span class="italic">Intituto cekundario de la k-ye</span>
-                <span class="italic">Argentina 2001</span>
+                <p class="italic">Intituto cekundario de la k-ye</p>
+                <p class="italic">Argentina 2001</p>
 
                 <div class="flex">
                     <button type="button" id="btn_mas_info"
@@ -63,8 +69,10 @@
         <section class="flex w-full flex-col text-gray-900 z-10 shadow-sm shadow-emerald-500/70">
 
             <div class="text-center hidden md:block">
-                <h1 class="font-bold p-2 bg-green-400/90 text-2xl rounded-b shadow-md shadow-emerald-500/20">Pepe
-                    Picapiedra
+                <h1
+                    class="font-bold p-2 bg-green-400/90 text-2xl rounded-b shadow-md shadow-emerald-500/20 nombre-apellido">
+                    Pepe
+                    Placeholder
                 </h1>
             </div>
             <div class="pl-16 pt-5 text-xl">
@@ -119,7 +127,7 @@
                         <li>Deslizarme lentamente en bicicleta con el menor esfuerzo posible</li>
                         <li>Intentar dislexia pelearle a la</li>
                         <li>Buscar en google donde llevan acento las palabras</li>
-                        <li>Aprender idiomas que no usen acentos</li>
+                        <li>Aprender algun idioma que no use acentos</li>
                     </ul>
                 </ins>
 
@@ -145,6 +153,7 @@
                 <a href="#"><i class="fa-brands fa-instagram fa-lg mb-1"></i></a>
                 <a href="#"><i class="fa-brands fa-facebook fa-lg mb-1"></i></a>
                 <a href="#"><i class="fa-brands fa-tiktok fa-lg mb-1"></i></a>
+
             </div>
         </div>
 
