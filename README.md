@@ -1,4 +1,4 @@
 # proyecto_final_ticmas
-Proyecto final de Curriculum Vitae para la Front end Academy 2022 de Argentina Programa
+Proyecto final de Curriculum Vitae para la Front end Academy 2022 de Argentina Programa.
 
-Nose si deberia hacerlo con el bootstrap o el tailwind asi que ya veo que sale.
+Hecho con HTML + CSS + JS, Tailwind CSS, Google Fonts, FontAwesome y la API de 'Randomuser.me'.
