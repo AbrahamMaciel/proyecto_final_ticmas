@@ -1,12 +1,16 @@
 const api_url = 'https://randomuser.me/api/?gender=male';
 
-function inicializarBoton() {
-    document.getElementById('btn_mas_info').onclick = function () {
-        let e = document.getElementById('mas_info');
+function inicializarBotones() {
+    let botones = document.getElementsByClassName('btn_mas_info');
+    let seccion_mas_info = document.getElementById('mas_info');
 
-        e.classList.remove('hidden');
-        e.scrollIntoView();
-    }
+    Array.from(botones).forEach(function (boton) {
+        boton.addEventListener('click', () => {
+            seccion_mas_info.classList.remove('hidden');
+            seccion_mas_info.scrollIntoView();
+        })
+    });
+
 }
 
 function escribirDatosPersona(persona) {
@@ -37,7 +41,7 @@ async function initialize() {
     const datos = await respuesta.json();
     const { results: { 0: persona } } = datos;
 
-    inicializarBoton();
+    inicializarBotones();
     escribirDatosPersona(persona);
 }
 
